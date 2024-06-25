@@ -1,0 +1,1346 @@
+.topHeaderSec {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7px 0px;
+    background-color: #020830;
+}
+
+.topHeaderSec>a {
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.topHeaderSec>a.Icon {
+    color: #fff;
+    width: 20px;
+}
+
+.topHeaderSec .header_BtnLink a {
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    text-decoration: underline;
+    padding: 10px 0px;
+}
+
+.header_BtnLink a:hover {
+    color: #ddd;
+}
+
+
+.topHeaderSec .header_BtnLink span {
+    color: #fff;
+}
+
+/*Header Css Start Here*/
+.headerSec {
+    background-color: #fff;
+    padding: 5px 0px;
+    border-bottom: 1px solid #ddd;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-bottom: 2px solid #020830;
+}
+
+.cstmNavbarSec {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cstmNavbarSec .navbarMenu {
+    display: flex;
+    justify-content: center;
+}
+
+.cstmNavbarSec a.logoLink img {
+    height: 75px;
+}
+
+.cstmNavbarSec .navbarMenu a {
+    font-size: 16px;
+    font-weight: 500;
+    color: #07092f;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.cstmNavbarSec .rightPanelHeader {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.cstmNavbarSec .navbarMenu a:hover {
+    color: #081047;
+}
+
+
+
+.cstmNavbarSec .btnBox {
+    display: flex;
+    gap: 5px;
+}
+
+.cstmNavbarSec .btnBox .cstmBTN {
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #050a2f;
+    background-color: #050a2f;
+    padding: 7px 20px;
+    border-radius: 50px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.cstmNavbarSec .btnBox .cstmBTN:last-child {
+    background-color: transparent;
+    border: 2px solid #050a2f;
+    color: #050a2f;
+}
+
+.cstmNavbarSec .btnBox .cstmBTN .Icon {
+    width: 20px;
+}
+
+.cstmNavbarSec .btnBox .cstmBTN:hover,
+.cstmNavbarSec .btnBox .cstmBTN:last-child:hover {
+    background-color: #030720;
+    border-color: #030720;
+    color: #fff;
+}
+
+/*Header Css End Here*/
+
+
+
+
+/*Carousel Css Start Here*/
+.homeBannerSec {
+    display: flex;
+}
+
+.homeBannerSec .carouselFilterSec {
+    width: 500px;
+    min-width: 500px;
+    background: url(/src/assets/img/Home_FilterBg.jpeg) no-repeat;
+    position: relative;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.homeBannerSec .carouselFilterSec::before {
+    content: '';
+    background-color: rgb(255 255 255 / 90%);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.carouselFilterSec .homeFilterSec h4 {
+    font-size: 20px;
+    font-weight: 400;
+    color: #050a2f;
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.carouselFilterSec .homeFilterSec h2 {
+    font-size: 30px;
+    font-weight: 500;
+    color: #050a2f;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+
+.carouselSec .carousel-inner .carousel-item::before {
+    background-color: rgb(0 0 0 / 25%);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+
+/*Banner Zoom Animation Css Here*/
+@-webkit-keyframes zoom {
+    from {
+        -webkit-transform: scale(1, 1);
+    }
+
+    to {
+        -webkit-transform: scale(1.1, 1.1);
+    }
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(1, 1);
+    }
+
+    to {
+        transform: scale(1.2, 1.2);
+    }
+}
+
+.carouselSec .carousel-inner .carousel-item>img {
+    height: 786px;
+    object-fit: cover;
+    width: 100% !important;
+    object-position: center;
+    animation: zoom 15s;
+}
+
+.carouselSec .carouselContentSec {
+    position: absolute;
+    left: 11%;
+    right: initial;
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial;
+    text-align: start;
+    background: rgb(0 0 0 / 90%);
+    padding: 15px;
+    width: 600px;
+    border-radius: 0px 50px 0px 50px;
+    border-bottom: 10px solid #ec6325;
+}
+
+.carouselSec .carouselContentSec h4 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.carouselSec .carouselContentSec h2 {
+    font-size: 28px;
+    font-weight: 500;
+    color: #ec6325;
+}
+
+.carouselSec .carouselContentSec p {
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    line-height: 25px;
+}
+
+
+.homeFilterSec .cstmFormGroup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.cstmInput {
+    background: #fff;
+}
+
+.cstmInput .MuiSelect-select {
+    padding: 10px;
+}
+
+
+.locationMenu_Wrapper {
+    margin-top: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.locationMenu_Wrapper .locationMenuBTN {
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 5px 15px;
+    width: 23%;
+}
+
+.locationMenu_Wrapper .locationMenuBTN .locCat_imgBox {
+    width: 70px;
+    height: 70px;
+    background-color: #050a2f;
+    border-radius: 50%;
+}
+
+.locationMenu_Wrapper .locationMenuBTN h6 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #050a2f;
+    text-transform: capitalize;
+}
+
+.locationMenu_Wrapper .locationMenuBTN:hover {
+    background-color: #ffffff60;
+}
+
+/*Carousel Css End Here*/
+
+
+/*Services Section Css Start Here*/
+.servicesSec {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: -70px;
+    z-index: 2;
+    position: relative;
+    /* border-top: 5px solid #ec6325; */
+}
+
+.servicesCard_Wrapper {
+    height: 250px;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+}
+
+.servicesCard_Wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to top, #020830, rgb(14 20 58 / 70%), rgb(14 20 58 / 60%), rgb(199 46 73 / 0%), rgb(236 99 37 / 0%));
+    z-index: 1;
+}
+
+.servicesCard_Wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.servicesCard_Wrapper:hover img {
+    transform: scale(1.1);
+}
+
+
+.serviceContentWrapper {
+    position: absolute;
+    bottom: 0;
+    padding: 15px;
+    z-index: 2;
+}
+
+.serviceContentWrapper h2 {
+    font-size: 22px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.serviceContentWrapper p {
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 15px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.serviceContentWrapper .viewAllLink {
+    background: #fff;
+    padding: 7px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #050a2f;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+}
+
+.serviceContentWrapper .viewAllLink:hover {
+    background: #050a2f;
+    color: #fff;
+}
+
+/*Services Section Css End Here*/
+
+
+/*About Us Section Css Start Here*/
+.aboutSec {
+    margin-top: 50px;
+    background-color: #f5f5f5;
+    padding: 50px 0px;
+}
+
+.aboutImgSec img {
+    max-width: 100%;
+}
+
+.aboutContentSec {
+    padding-left: 20px;
+}
+
+.aboutContentSec>h4,
+.sectionHeading h4 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #0f153b;
+    display: flex;
+    align-items: end;
+}
+
+.aboutContentSec img.subheadingImg,
+.sectionHeading h4 .subheadingImg {
+    width: 40px;
+    margin-bottom: -2px;
+    margin-right: -5px;
+    margin-left: -2px;
+}
+
+.aboutContentSec>h2 {
+    font-size: 28px;
+    font-weight: 500;
+    margin: 15px 0px 20px;
+    line-height: 38px;
+    color: #0f153b;
+}
+
+.aboutContentSec>p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #1e1e1e;
+    line-height: 30px;
+    margin-bottom: 15px;
+}
+
+.aboutContentSec .aboutHighlight h2 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #0f153b;
+}
+
+.aboutContentSec .aboutHighlight h4 {
+    font-size: 22px;
+    font-weight: 500;
+    color: #0f153b;
+}
+
+/*About Us Section Css End Here*/
+
+/*Top Coliving Section Css Start Here*/
+.topSpaces_Sec {
+    padding: 50px 0px;
+}
+
+.sectionHeading h4 {
+    justify-content: center;
+}
+
+.sectionHeading h2 {
+    font-size: 28px;
+    font-weight: 500;
+    color: #0f153b;
+    text-align: center;
+    margin: 15px 0px 30px;
+}
+
+.sectionHeading h2::after {
+    content: '';
+    width: 35px;
+    height: 2px;
+    background-color: #0f153b;
+    display: block;
+    margin: 10px auto 0px;
+}
+
+
+.propertyCardWrapper .propertyImgBox {
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.propertyCardWrapper .propertyImgBox img {
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.propertyCardWrapper:hover .propertyImgBox img {
+    transform: scale(1.2);
+}
+
+.propertyCardWrapper .propertyContentBox {
+    background-color: #fff;
+    width: 80%;
+    margin: -20px auto 0px;
+    padding: 15px;
+    z-index: 1;
+    position: relative;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 5px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.propertyCardWrapper .propertyContentBox h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #0f153b;
+    margin-bottom: 5px;
+}
+
+.propertyCardWrapper .propertyContentBox h6 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #0f153b;
+}
+
+
+.propertyCardWrapper:hover .propertyContentBox {
+    background-color: #0f153b;
+}
+
+.propertyCardWrapper:hover .propertyContentBox h2,
+.propertyCardWrapper:hover .propertyContentBox h6 {
+    color: #fff;
+}
+
+/*Top Coliving Section Css End Here*/
+
+
+/*Contact form Section Css Start Here*/
+.contactImgBox img {
+    width: 100%;
+}
+
+.formBox {
+    background-color: #0f153b;
+    height: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.formBox h2 {
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.formBox p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+.cstmInputField {
+    background-color: #fff;
+    border: none;
+}
+
+.cstmInputField input {
+    padding: 10px;
+    color: #000;
+    font-size: 16px;
+}
+
+.cstmInputField input::placeholder {
+    color: #000;
+    opacity: 1;
+}
+
+.btnBox .cstmBTN {
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+    background-color: #0f153b;
+    padding: 7px 20px;
+    border-radius: 50px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btnBox .cstmBTN:hover {
+    background-color: #080c27;
+    color: #fff;
+}
+
+/*Contact form Section Css End Here*/
+
+/*What Get form Section Css Start Here*/
+.whatgetForm_Sec {
+    background: url(./assets/img/getfrom_usbg.jpg) no-repeat;
+    position: relative;
+    overflow: hidden;
+    padding: 50px 0px;
+    background-size: cover;
+}
+
+.whatgetForm_Sec::before {
+    content: '';
+    background-color: rgb(255 255 255 / 95%);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.zindex {
+    position: relative;
+    z-index: 1;
+}
+
+/* .leftAlignHeading h4 {
+    justify-content: start;
+}
+
+.leftAlignHeading h2 {
+    text-align: start;
+}
+
+.leftAlignHeading h2::after {
+    margin: 10px 0px 0px;
+} */
+
+/* .whatgetForm_Sec .leftAlignHeading h2,
+.whatgetForm_Sec .leftAlignHeading h4 {
+    color: #fff;
+} */
+
+.getFormContentSec {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-right: 15px;
+    height: 100%;
+    justify-content: center;
+}
+
+.whatgetForm_Sec .getFormContentBox {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.whatgetForm_Sec .getFormContentBox:hover {
+    background-color: rgb(255 255 255 / 10%);
+}
+
+.whatgetForm_Sec .getFormContentBox .getformIconBox {
+    width: 50px;
+    min-width: 50px;
+    height: 50px;
+    background: #0f153b;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.whatgetForm_Sec .getFormContentBox .getformIconBox svg {
+    width: 30px;
+    height: 30px;
+    color: #fff;
+}
+
+.whatgetForm_Sec .getFormContentBox h2 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #0f153b;
+    margin-bottom: 10px;
+}
+
+.whatgetForm_Sec .getFormContentBox p {
+    font-size: 15px;
+    font-weight: 400;
+    color: #0f153b;
+}
+
+.whatgetForm_Sec .getFormImgBox img {
+    width: 100%;
+}
+
+/*What Get form Section Css End Here*/
+
+
+/*Branding Section Css Start Here*/
+.brandingSec {
+    padding: 50px 0px;
+}
+
+.brandingLogoImgBox img {
+    max-width: 100%;
+}
+
+/*Branding Section Css End Here*/
+
+/*Footer Section Css Start Here*/
+.footerSec {
+    background: #0f153b;
+    padding: 50px 0px;
+}
+
+.footerLogo img {
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+.footerCardWrapper p {
+    font-size: 14px;
+    font-weight: 200;
+    color: #fff;
+    line-height: 27px;
+}
+
+.footerCardWrapper .socialnav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.footerCardWrapper .socialnav .socailNavLink {
+    width: 35px;
+    height: 35px;
+    display: inline-flex;
+    background-color: #fff;
+    border: 1px solid #0f153b;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerCardWrapper .socialnav .socailNavLink svg {
+    color: #0f153b;
+}
+
+.footerCardWrapper .socialnav .socailNavLink:hover {
+    background-color: #0f153b;
+    border: 1px solid #fff;
+}
+
+.footerCardWrapper .socialnav .socailNavLink:hover svg {
+    color: #fff;
+}
+
+
+.footerCardWrapper .leftAlignHeading h4 {
+    justify-content: start;
+}
+
+.footerCardWrapper .leftAlignHeading h2 {
+    text-align: start;
+    color: #fff;
+    font-size: 22px;
+    margin: 0px 0px 15px;
+}
+
+.footerCardWrapper .leftAlignHeading h2::after {
+    margin: 10px 0px 0px;
+}
+
+
+
+.footerCardWrapper .footerNavbar .footerNavLink {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 0px;
+    transition: all 0.3s ease-in-out;
+}
+
+.footerCardWrapper .footerNavbar .footerNavLink:hover {
+    padding-left: 5px;
+    color: #c4c4c4;
+}
+
+.footerCardWrapper .footerNavbar .footerNavLink svg {
+    color: #fff;
+    width: 18px;
+}
+
+
+.ContactMenu .contactContent {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.ContactMenu .contactContent .contactIconBox {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+}
+
+.ContactMenu .contactContent .contactIconBox svg {
+    color: #0f153b;
+}
+
+.ContactMenu .contactContent p {
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.ContactMenu .contactContent a {
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footerMapBox {
+    overflow: hidden;
+    height: auto !important;
+    line-height: normal;
+}
+
+.footerMapBox iframe {
+    width: 100%;
+    line-height: normal;
+}
+
+.bottomFooterSec {
+    background-color: #090d2c;
+    padding: 10px 0px;
+    text-align: center;
+}
+
+.bottomFooterSec span {
+    font-size: 14px;
+    font-weight: 300;
+    color: #fff;
+}
+
+.bottomFooterSec span a {
+    color: #fff;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+/*Footer Section Css End Here*/
+
+
+
+
+/*About Us Css Start Here*/
+.innerBannerSec {
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.innerBannerSec::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(15 21 59 / 75%);
+}
+
+.innerBannerSec img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.innerBannerSec h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 28px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.aboutUsPage_ContentSec .aboutSec {
+    margin-top: 0px;
+    background-color: #fff;
+}
+
+.cstm_Zindex {
+    position: relative;
+    z-index: 1;
+}
+
+.spaceSearchSec h2 {
+    margin-top: 0px;
+}
+
+.spaceSearchSec p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #1e1e1e;
+    line-height: 30px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.rentiaNetworkSec {
+    padding: 50px 0px;
+}
+
+.leftAlignHeading h2 {
+    text-align: start;
+    margin-bottom: 15px;
+}
+
+.leftAlignHeading h2::after {
+    margin: 10px 0px 0px;
+}
+
+.leftAlignHeading h4 {
+    justify-content: start;
+}
+
+.networkCard {
+    background-color: #ec6325;
+    padding: 20px 15px;
+    width: 100%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 5px;
+}
+
+.networkCard h2 {
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+}
+
+.networkCard span {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    display: block;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.aboutServices_Sec {
+    padding: 50px 0px;
+}
+
+.abServiceBGLight {
+    background-color: #f6f6f6;
+}
+
+.aboutServiceImgBox {
+    border-radius: 30px 0px 30px 0px;
+    overflow: hidden;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.aboutServiceImgBox img {
+    width: 100%;
+}
+
+/*About Us Css End Here*/
+
+
+
+/*Login Css Start Here*/
+.loginSec {
+    display: flex;
+    height: 100vh;
+    min-height: 100vh;
+}
+
+.loginSec .loginImgSec {
+    width: 70%;
+    overflow: hidden;
+    position: relative;
+}
+
+.loginSec .loginImgSec::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(0 0 0 / 50%);
+}
+
+.loginSec .loginImgSec img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.loginSec .loginImgSec .sitelogo {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 90px;
+    height: 110px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.loginContentBox {
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    transform: translateY(-50%);
+}
+
+.loginContentBox h2 {
+    font-size: 30px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.loginContentBox p {
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+    padding-right: 35%;
+    line-height: 30px;
+    margin-top: 20px;
+}
+
+.loginFormSec {
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+.loginFormSec .loginFormBox {
+    width: 100%;
+    margin-left: -100px;
+    background: #fff;
+    z-index: 1;
+    border-radius: 30px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 50px 30px;
+}
+
+.loginFormSec .loginFormBox h2 {
+    font-size: 24px;
+    font-weight: 500;
+    color: #060a30;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.loginFormSec .loginFormBox .cstmFormGroup label {
+    font-size: 16px;
+    font-weight: 500;
+    color: #060a30;
+}
+
+.loginFormSec .loginFormBox .cstmFormGroup .cstmInputField input {
+    padding-left: 0px;
+}
+
+/*Login Css End Here*/
+
+
+/*Listing Page Css Start Here*/
+.listingSec {
+    display: flex;
+    align-items: start;
+    gap: 20px;
+}
+
+.listingSec .sideFilterSec {
+    width: 30%;
+    background-color: #eee;
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+.sideFilterSec h2 {
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #0f153b;
+    color: #fff;
+    padding: 15px;
+}
+
+.filterTabSec {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.filterTabSec .cstmTabButton {
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+    background-color: #0f153b;
+    padding: 8px 15px;
+    border-radius: 50px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    text-transform: capitalize;
+    transition: all 0.3s ease-in-out;
+}
+
+.sectionHeading h2 {
+    font-size: 22px;
+    font-weight: 400;
+    color: #000;
+}
+
+.listingCard {
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.listingCard .listingImg {
+    height: 200px;
+    overflow: hidden;
+}
+
+.listingCard .listingImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.listingCard .listingContent {
+    padding: 15px;
+}
+
+.listingCard .listingContent h3 {
+    font-size: 22px;
+    font-weight: 500;
+    color: #0f153b;
+}
+
+.listingCard .listingContent span {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 5px 0px 0px;
+    display: block;
+}
+
+.listingCard .listingContent .priceContent {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.listingCard .listingContent .priceContent svg {
+    width: 18px;
+}
+
+.listingCard .listingContent .priceContent h6 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.listingCard .listingContent .priceContent h6 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+}
+
+.listingCard .listingContent .priceContent h6::after {
+    content: '/';
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0px 5px;
+}
+
+.listingCard .listingContent .priceContent h6:last-child::after {
+    content: '';
+    display: none;
+}
+
+.listingCard .ratingSec {
+    width: 110px;
+    background: #fff;
+    margin: -25px 15px 0px auto;
+    z-index: 1;
+    position: relative;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.listingCard .ratingSec .userRatingIcon {
+    width: 18px;
+    color: #feb711;
+}
+
+/*Listing Page Css End Here*/
+
+/*Listing Detail Page Css Start Here*/
+.listingDetail_ImgBox,
+.listingDetail_ImgBox img {
+    height: 100%;
+}
+
+.listingDetail_ImgBox img {
+    border-radius: 10px;
+}
+
+.listingDetailContent_Box {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.listingDetailContent_Box h2 {
+    font-size: 24px;
+    font-weight: 500;
+    color: #0f153b;
+}
+
+.listingDetailContent_Box span {
+    font-size: 16px;
+    font-weight: 400;
+    color: #0f153b;
+    display: block;
+    margin-top: 5px;
+}
+
+.listingDetailContent_Box .priceContent {
+    display: flex;
+    align-items: center;
+    gap: 0px;
+}
+
+.listingDetailContent_Box .priceContent svg {
+    width: 25px;
+    height: 25px;
+    color: #0f153b;
+}
+
+.listingDetailContent_Box .priceContent h6 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #0f153b;
+    margin-right: 5px;
+}
+
+.listingDetailContent_Box .priceContent h6::after {
+    content: '/';
+    margin: 0px 3px;
+}
+
+.listingDetailContent_Box .priceContent span {
+    font-size: 14px;
+    font-weight: 500;
+    color: #ababab;
+}
+
+.propertDescription>.aboutdescriptonPara {
+    font-size: 14px;
+    font-weight: 400;
+    color: #0f153b;
+    line-height: 30px;
+    margin-bottom: 15px;
+}
+
+.propertDescription .showMoreBTN {
+    padding: 0px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #0f153b;
+    text-transform: capitalize;
+}
+
+.propertDetail .propertDetailListBox {
+    margin-bottom: 5px;
+}
+
+.propertDetail .propertDetailListBox span {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: normal;
+    color: #838383;
+    margin-right: 5px;
+}
+
+.propertDetail .propertDetailListBox span:last-child {
+    font-weight: 500;
+    color: #0f153b;
+}
+
+.timingSlotBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #0f153b;
+}
+
+.timingSlotBox h3 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+}
+
+/*Listing Detail Page Css End Here*/
