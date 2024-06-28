@@ -64,17 +64,7 @@ const Footer = () => {
 
                                     <Link to='/' className='footerNavLink'>
                                         <EastIcon />
-                                        Co-Working
-                                    </Link>
-
-                                    <Link to='/' className='footerNavLink'>
-                                        <EastIcon />
                                         Co-Living
-                                    </Link>
-
-                                    <Link to='/' className='footerNavLink'>
-                                        <EastIcon />
-                                        Virtual Office
                                     </Link>
 
                                     <Link to='/' className='footerNavLink'>
@@ -96,21 +86,14 @@ const Footer = () => {
                                         <Box className='contactIconBox'>
                                             <LocationOnIcon />
                                         </Box>
-                                        <Typography variant='body1'>123-abc lorem ipsum 123456</Typography>
-                                    </Box>
-
-                                    <Box className='contactContent'>
-                                        <Box className='contactIconBox'>
-                                            <CallIcon />
-                                        </Box>
-                                        <Link to='/'>+91-989-8989+898</Link>
+                                        <Typography variant='body1'>Q1 Block, Q 147 South city 2, sector 49, Gurugram</Typography>
                                     </Box>
 
                                     <Box className='contactContent'>
                                         <Box className='contactIconBox'>
                                             <EmailIcon />
                                         </Box>
-                                        <Link to='/'>abc@loremipsum.com</Link>
+                                        <Link to='/'>Info@rentia.in</Link>
                                     </Box>
                                 </Box>
                             </Box>

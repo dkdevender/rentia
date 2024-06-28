@@ -23,7 +23,7 @@ const About = () => {
                 <Aboutsec />
             </Box>
 
-            <Box className="whatgetForm_Sec spaceSearchSec">
+            {/* <Box className="whatgetForm_Sec spaceSearchSec">
                 <Container className='cstmContainer cstm_Zindex'>
                     <Box className='sectionHeading'>
                         <Typography variant='h2'>Space Search Made Simple</Typography>
@@ -136,7 +136,7 @@ const About = () => {
                 </Container>
             </Box>
 
-            <Branding />
+            <Branding /> */}
 
             <Footer />
         </>

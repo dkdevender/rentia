@@ -26,8 +26,7 @@ const Homebanner = () => {
                 <Box className="carouselFilterSec">
                     <Box className="homeFilterSec">
                         <Typography variant='h4'>Choose from</Typography>
-                        <Typography variant='h2'>100,000+ spaces to Work & Live</Typography>
-
+                        
                         <Box className='cstmFormGroup'>
                             <FormControl sx={{ width: '100%' }}>
                                 <Select

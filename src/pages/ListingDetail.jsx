@@ -14,6 +14,16 @@ import Select from '@mui/material/Select';
 import OutlinedInput from '@mui/material/OutlinedInput';
 import { Link } from 'react-router-dom';
 
+import PersonIcon from '@mui/icons-material/Person';
+import GroupIcon from '@mui/icons-material/Group';
+import GroupAddIcon from '@mui/icons-material/GroupAdd';
+import LocalParkingIcon from '@mui/icons-material/LocalParking';
+import CleaningServicesIcon from '@mui/icons-material/CleaningServices';
+import CountertopsIcon from '@mui/icons-material/Countertops';
+import VideocamIcon from '@mui/icons-material/Videocam';
+import BoltIcon from '@mui/icons-material/Bolt';
+import ListingCarousel from '../components/ListingCarousel';
+
 const ListingDetail = () => {
     //Contact Dropdown Menu
     const [lookingfor, setLookingfor] = React.useState('');
@@ -99,14 +109,87 @@ const ListingDetail = () => {
 
                 <Grid container spacing={2} className='mt-3'>
                     <Grid item md={8}>
+                        <Box className="pricingPlanSec">
+                            <Box className="sectionHeading leftAlignHeading">
+                                <Typography variant='h2'>Pricing Plans</Typography>
+                            </Box>
+
+                            <Grid container spacing={2}>
+                                <Grid item md={6}>
+                                    <Box className="priceCardBox">
+                                        <Box className="d-flex align-items-center gap-3">
+                                            <Box className="pricingPlanIconBox">
+                                                <PersonIcon />
+                                            </Box>
+                                            <Typography variant='h2'>Single Sharing</Typography>
+                                        </Box>
+
+
+                                        <Box className="pricingContent text-end">
+                                            <Box className="d-flex">
+                                                <Typography variant='h3'>35000/</Typography>
+                                                <Typography variant='subtitle1'>*month</Typography>
+                                            </Box>
+
+                                            <Button className='cstmBTN'>Enquiry Now</Button>
+                                        </Box>
+                                    </Box>
+                                </Grid>
+
+                                <Grid item md={6}>
+                                    <Box className="priceCardBox">
+                                        <Box className="d-flex align-items-center gap-3">
+                                            <Box className="pricingPlanIconBox">
+                                                <GroupIcon />
+                                            </Box>
+                                            <Typography variant='h2'>Double Sharing</Typography>
+                                        </Box>
+
+
+                                        <Box className="pricingContent text-end">
+                                            <Box className="d-flex">
+                                                <Typography variant='h3'>35000/</Typography>
+                                                <Typography variant='subtitle1'>*month</Typography>
+                                            </Box>
+
+                                            <Button className='cstmBTN'>Enquiry Now</Button>
+                                        </Box>
+                                    </Box>
+                                </Grid>
+
+                                <Grid item md={6}>
+                                    <Box className="priceCardBox">
+                                        <Box className="d-flex align-items-center gap-3">
+                                            <Box className="pricingPlanIconBox">
+                                                <GroupAddIcon />
+                                            </Box>
+                                            <Typography variant='h2'>Triple Sharing</Typography>
+                                        </Box>
+
+
+                                        <Box className="pricingContent text-end">
+                                            <Box className="d-flex">
+                                                <Typography variant='h3'>35000/</Typography>
+                                                <Typography variant='subtitle1'>*month</Typography>
+                                            </Box>
+
+                                            <Button className='cstmBTN'>Enquiry Now</Button>
+                                        </Box>
+                                    </Box>
+                                </Grid>
+                            </Grid>
+                        </Box>
+
+                        <hr className='my-3' />
+
                         <Box className="propertDescription">
                             <Box className="sectionHeading leftAlignHeading">
                                 <Typography variant='h2'>About this property</Typography>
                             </Box>
 
-                            <Typography variant='body1' className='aboutdescriptonPara'>Rentia is a vibrant coworking fully furnished office space on rent situated in Sector 58, Golf Course Extension Road, Gurgaon also offering dedicated desks, private cabins, conference rooms, collaborative zones, high-speed Wi-Fi, ergonomic furniture, and more. Locationed in Magnum Tower 2, Gurgaon, Haryana it is  Just 10 minutes from Sec 55-56 Metro Station on Golf Course Road. Complimentary Tea and coffee - Office boy service for guests - Electricity - AC - Maintenanc...</Typography>
+                            <Typography variant='body1' className='aboutdescriptonPara'>Rentia is a vibrant coliving fully furnished office space on rent situated in Sector 58, Golf Course Extension Road, Gurgaon also offering dedicated desks, private cabins, conference rooms, collaborative zones, high-speed Wi-Fi, ergonomic furniture, and more. Locationed in Magnum Tower 2, Gurgaon, Haryana it is  Just 10 minutes from Sec 55-56 Metro Station on Golf Course Road. Complimentary Tea and coffee - Office boy service for guests - Electricity - AC - Maintenanc...</Typography>
 
-                            <Button className='showMoreBTN'>Show More <KeyboardArrowDownIcon /></Button>
+                            {/* <Button className='showMoreBTN'>Show More <KeyboardArrowDownIcon /></Button> */}
                         </Box>
 
                         <hr className='my-3' />
@@ -160,16 +243,86 @@ const ListingDetail = () => {
                             </Grid>
                         </Box>
 
-                        <Box className="timingSlotBox my-3">
-                            <Typography variant='h3'>Mon - Fri : 09:00 AM to 08:00 PM</Typography>
-                            <Typography variant='h3'>Sat : 09:00 AM to 08:00 PM</Typography>
-                            <Typography variant='h3'>Sun : Closed</Typography>
+                        <hr className='my-3' />
+
+                        <Box className="amentiesSec">
+                            <Box className="sectionHeading leftAlignHeading">
+                                <Typography variant='h2'>Amenties</Typography>
+                            </Box>
+
+                            <Grid container spacing={2}>
+                                <Grid item md={4}>
+                                    <Box className="d-flex gap-3 align-items-center">
+                                        <Box className="amentiesIconBox">
+                                            <LocalParkingIcon />
+                                        </Box>
+                                        <Typography variant='subtitle1'>Parking</Typography>
+                                    </Box>
+                                </Grid>
+
+                                <Grid item md={4}>
+                                    <Box className="d-flex gap-3 align-items-center">
+                                        <Box className="amentiesIconBox">
+                                            <CleaningServicesIcon />
+                                        </Box>
+                                        <Typography variant='subtitle1'>Housekeeping</Typography>
+                                    </Box>
+                                </Grid>
+
+                                <Grid item md={4}>
+                                    <Box className="d-flex gap-3 align-items-center">
+                                        <Box className="amentiesIconBox">
+                                            <CountertopsIcon />
+                                        </Box>
+                                        <Typography variant='subtitle1'>CCTV</Typography>
+                                    </Box>
+                                </Grid>
+
+                                <Grid item md={4}>
+                                    <Box className="d-flex gap-3 align-items-center">
+                                        <Box className="amentiesIconBox">
+                                            <CountertopsIcon />
+                                        </Box>
+                                        <Typography variant='subtitle1'>Kitchen</Typography>
+                                    </Box>
+                                </Grid>
+
+                                <Grid item md={4}>
+                                    <Box className="d-flex gap-3 align-items-center">
+                                        <Box className="amentiesIconBox">
+                                            <VideocamIcon />
+                                        </Box>
+                                        <Typography variant='subtitle1'>24x7 Security</Typography>
+                                    </Box>
+                                </Grid>
+
+                                <Grid item md={4}>
+                                    <Box className="d-flex gap-3 align-items-center">
+                                        <Box className="amentiesIconBox">
+                                            <BoltIcon />
+                                        </Box>
+                                        <Typography variant='subtitle1'>Power Backup</Typography>
+                                    </Box>
+                                </Grid>
+                            </Grid>
+                        </Box>
+
+                        <hr className='my-3' />
+
+                        <Box className="propertyMapSec">
+                            <Box className="sectionHeading leftAlignHeading">
+                                <Typography variant='h2' className='mb-4'>You will Stay here</Typography>
+                            </Box>
+
+                            <Box className="propertyMapBox">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15281527.263685085!2d72.10809512517388!3d20.75721265177788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e0!3m2!1sen!2sin!4v1716672702237!5m2!1sen!2sin" height="400" style={{ width: '100%' }}></iframe>
+                            </Box>
                         </Box>
                     </Grid>
 
                     <Grid item md={4}>
-                        <Box className='formBox'>
-                            <Typography variant='h2'>Let us find your perfect Property</Typography>
+                        <Box className='formBox' style={{position:'sticky', top:'20px'}}>
+                            <Typography variant='h2'>Let us find your perfect property with Reserve now & schedule a visit</Typography>
                             <Typography variant='body1'>Connect to a Rentia Space Expert now</Typography>
 
                             <Grid container spacing={2}>
@@ -267,6 +420,14 @@ const ListingDetail = () => {
                         </Box>
                     </Grid>
                 </Grid>
+
+                <Box className="listingCarouselSec mt-4">
+                    <Box className="sectionHeading">
+                        <Typography variant='h2'>Similar Coliving Spaces in Gurugram</Typography>
+                    </Box>
+
+                    <ListingCarousel />
+                </Box>
             </Container>
 
             <Footer />

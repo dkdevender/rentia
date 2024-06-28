@@ -59,7 +59,7 @@ const Getfromus = () => {
                                     </Box>
 
                                     <Box>
-                                        <Typography variant='h2'>No booking service fee</Typography>
+                                        <Typography variant='h2'>no booking service fee with no brokerage fees in (what you get from us).</Typography>
                                         <Typography variant='body1'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</Typography>
                                     </Box>
                                 </Box>

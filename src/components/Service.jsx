@@ -23,7 +23,7 @@ const Service = () => {
                                 <img src={co_work} className='img-fluid' />
 
                                 <Box className='serviceContentWrapper'>
-                                    <Typography variant='h2'>Coworking Spaces</Typography>
+                                    <Typography variant='h2'>Coliving Spaces</Typography>
                                     <Typography variant='body1'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</Typography>
                                     <Link to='/' className='viewAllLink'>View All</Link>
                                 </Box>

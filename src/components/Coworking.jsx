@@ -13,7 +13,7 @@ const Coworking = () => {
                             <img src={aboutsubHeadingImg} className='subheadingImg' />
                             Top
                         </Typography>
-                        <Typography variant='h2'>Coworking in India</Typography>
+                        <Typography variant='h2'>Virtual Office in India</Typography>
                     </Box>
 
                     <Grid container spacing={2}>

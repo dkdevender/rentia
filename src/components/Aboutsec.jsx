@@ -3,6 +3,8 @@ import { Box, Container, Grid, Typography } from '@mui/material';
 import aboutImg from '../assets/img/About.png';
 import aboutsubHeadingImg from '../assets/img/subHeadingImg.svg';
 import { Link } from 'react-router-dom';
+import RocketLaunchIcon from '@mui/icons-material/RocketLaunch';
+import RemoveRedEyeIcon from '@mui/icons-material/RemoveRedEye';
 
 const Aboutsec = () => {
     return (
@@ -18,29 +20,15 @@ const Aboutsec = () => {
 
                         <Grid item md={7}>
                             <Box className='aboutContentSec'>
-                                <Typography variant='h4'>
+                                <Typography variant='h4' className='mb-4'>
                                     <img src={aboutsubHeadingImg} className='subheadingImg' />
                                     About Company
                                 </Typography>
-                                <Typography variant='h2'>List your Coworking and Coliving space on Rentia, India's #1 online platform for space discovery and bookings.</Typography>
-                                <Typography variant='body1'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</Typography>
-                                <Typography variant='body1'>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</Typography>
-
-                                <Box sx={{ display: 'flex', gap: '30px', margin: '20px 0px 30px' }}>
-                                    <Box className='aboutHighlight'>
-                                        <Box>
-                                            <Typography variant='h2'>1000+</Typography>
-                                            <Typography variant='h4'>Location</Typography>
-                                        </Box>
-                                    </Box>
-
-                                    <Box className='aboutHighlight'>
-                                        <Box>
-                                            <Typography variant='h2'>25+</Typography>
-                                            <Typography variant='h4'>Cities</Typography>
-                                        </Box>
-                                    </Box>
-                                </Box>
+                                <Typography variant='body1'>Rentia is a platform that aims to make co-living accessible and convenient for everyone. The platform connects tenants with the best co-living brands in Gurugram, providing them with detailed information about different brands and their properties. This makes it easier for tenants to find a room that fits their budget and needs.</Typography>
+                                <Typography variant='h2'><RocketLaunchIcon className="cstmAboutIcon"/>Mission</Typography>
+                                <Typography variant='body1'>Rentia's mission is to make co-living accessible and convenient for everyone by being the go-to platform for booking, promoting top brands, and driving the growth of the co-living industry.</Typography>
+                                <Typography variant='h2'><RemoveRedEyeIcon className="cstmAboutIcon" />Vision</Typography>
+                                <Typography variant='body1'>Rentia Aims to Establish Itself as the Foremost Platform for Co-living Solutions in India, Offering Affordable, Top-notch Accommodation Options with Uncompromising Quality and Exemplary Customer Satisfaction.</Typography>
 
                                 <Box className='btnBox'>
                                     <Link to='/' className='cstmBTN'>Read More</Link>

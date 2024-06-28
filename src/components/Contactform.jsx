@@ -31,7 +31,7 @@ const Contactform = () => {
                         </Box>
                     </Grid>
                     <Grid item md={5}>
-                        <Box className='formBox'>
+                        <Box className='formBox height100'>
                             <Typography variant='h2'>Let us find your perfect Property</Typography>
                             <Typography variant='body1'>Connect to a Rentia Space Expert now</Typography>
 

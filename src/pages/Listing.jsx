@@ -33,12 +33,12 @@ const Listing = () => {
 
             <Box className="innerBannerSec">
                 <img src={listingInnerImg} />
-                <Typography variant='h2'>Co-Working</Typography>
+                <Typography variant='h2'>Coliving Spaces</Typography>
             </Box>
 
             <Container className='cstmContainer my-5'>
                 <Box className="sectionHeading">
-                    <Typography variant='h2'>Co-Working Space in Your City</Typography>
+                    <Typography variant='h2'>Coliving spaces with PG’s</Typography>
                 </Box>
 
                 <Box className="listingSec">
@@ -118,7 +118,7 @@ const Listing = () => {
                                     </Box>
 
                                     <Box className='btnBox mt-4'>
-                                        <Link to='/' className='cstmBTN w-100' style={{ padding: '12px' }}>Get Details</Link>
+                                        <Link to='/ListingDetail' className='cstmBTN w-100' style={{ padding: '12px' }}>Get Details</Link>
                                     </Box>
                                 </Box>
 
@@ -149,7 +149,7 @@ const Listing = () => {
                                     </Box>
 
                                     <Box className='btnBox mt-4'>
-                                        <Link to='/' className='cstmBTN w-100' style={{ padding: '12px' }}>Get Details</Link>
+                                        <Link to='/ListingDetail' className='cstmBTN w-100' style={{ padding: '12px' }}>Get Details</Link>
                                     </Box>
                                 </Box>
 
@@ -180,7 +180,7 @@ const Listing = () => {
                                     </Box>
 
                                     <Box className='btnBox mt-4'>
-                                        <Link to='/' className='cstmBTN w-100' style={{ padding: '12px' }}>Get Details</Link>
+                                        <Link to='/ListingDetail' className='cstmBTN w-100' style={{ padding: '12px' }}>Get Details</Link>
                                     </Box>
                                 </Box>
 
@@ -211,7 +211,7 @@ const Listing = () => {
                                     </Box>
 
                                     <Box className='btnBox mt-4'>
-                                        <Link to='/' className='cstmBTN w-100' style={{ padding: '12px' }}>Get Details</Link>
+                                        <Link to='/ListingDetail' className='cstmBTN w-100' style={{ padding: '12px' }}>Get Details</Link>
                                     </Box>
                                 </Box>
 
@@ -242,7 +242,7 @@ const Listing = () => {
                                     </Box>
 
                                     <Box className='btnBox mt-4'>
-                                        <Link to='/' className='cstmBTN w-100' style={{ padding: '12px' }}>Get Details</Link>
+                                        <Link to='/ListingDetail' className='cstmBTN w-100' style={{ padding: '12px' }}>Get Details</Link>
                                     </Box>
                                 </Box>
 
@@ -273,7 +273,7 @@ const Listing = () => {
                                     </Box>
 
                                     <Box className='btnBox mt-4'>
-                                        <Link to='/' className='cstmBTN w-100' style={{ padding: '12px' }}>Get Details</Link>
+                                        <Link to='/ListingDetail' className='cstmBTN w-100' style={{ padding: '12px' }}>Get Details</Link>
                                     </Box>
                                 </Box>
 

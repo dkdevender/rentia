@@ -16,7 +16,7 @@ const Header = () => {
                     <Box className="topHeaderSec d-flex justify-content-between p-0">
                         <Link to='/'>
                             <EmailIcon className='Icon' />
-                            abc@loremipsum.com
+                            info@rentia.in
                         </Link>
 
                         <Box className="header_BtnLink">
@@ -39,9 +39,9 @@ const Header = () => {
                             <Box className='navbarMenu'>
                                 <Link to='/' className='nav-item nav-link'>Home</Link>
                                 <Link to='/About' className='nav-item nav-link'>About Us</Link>
-                                <Link to='/Listing' className='nav-item nav-link'>Coworking</Link>
-                                <Link to='/' className='nav-item nav-link'>Coliving</Link>
-                                <Link to='/' className='nav-item nav-link'>Virtual Office</Link>
+                                <Link to='/Listing' className='nav-item nav-link'>Coliving</Link>
+                                {/* <Link to='/Listing' className='nav-item nav-link'>Coworking</Link>
+                                <Link to='/' className='nav-item nav-link'>Virtual Office</Link> */}
                                 <Link to='/' className='nav-item nav-link'>Knowledge</Link>
                             </Box>
 

@@ -1,11 +1,16 @@
-import "../node_modules/bootstrap/dist/css/bootstrap.css";
-import Home from "./pages/home";
-import { Route, Routes } from "react-router-dom";
-import About from "./pages/About";
-import Login from "./accounts/Login";
-import Registration from "./accounts/Registration";
-import Listing from "./pages/Listing";
-import ListingDetail from "./pages/ListingDetail";
+import React from 'react'
+import '../node_modules/bootstrap/dist/css/bootstrap.css'
+import Home from './pages/home'
+import { Route, Routes } from 'react-router-dom'
+import About from './pages/About'
+import Login from './accounts/Login'
+import Registration from './accounts/Registration'
+import Listing from './pages/Listing'
+import ListingDetail from './pages/ListingDetail'
+import AddListing from './pages/AddListing'
+
+
+
 
 const App = () => {
   return (
@@ -18,10 +23,11 @@ const App = () => {
           <Route path="Registration" element={<Registration />} />
           <Route path="Listing" element={<Listing />} />
           <Route path="ListingDetail" element={<ListingDetail />} />
+          <Route path="AddListing" element={<AddListing />} />
         </Route>
       </Routes>
     </>
-  );
-};
+  )
+}
 
 export default App;

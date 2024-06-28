@@ -158,19 +158,8 @@
     z-index: 1;
     position: relative;
     text-align: center;
-    margin-bottom: 5px;
-}
-
-.carouselFilterSec .homeFilterSec h2 {
-    font-size: 30px;
-    font-weight: 500;
-    color: #050a2f;
-    position: relative;
-    z-index: 1;
-    text-align: center;
     margin-bottom: 30px;
 }
-
 
 
 .carouselSec .carousel-inner .carousel-item::before {
@@ -427,7 +416,7 @@
 .aboutContentSec>h2 {
     font-size: 28px;
     font-weight: 500;
-    margin: 15px 0px 20px;
+    margin: 0px 0px 5px;
     line-height: 38px;
     color: #0f153b;
 }
@@ -440,16 +429,12 @@
     margin-bottom: 15px;
 }
 
-.aboutContentSec .aboutHighlight h2 {
-    font-size: 28px;
-    font-weight: 600;
-    color: #0f153b;
-}
 
-.aboutContentSec .aboutHighlight h4 {
-    font-size: 22px;
-    font-weight: 500;
-    color: #0f153b;
+.cstmAboutIcon {
+    width: 30px !important;
+    height: 30px !important;
+    color: #ff5e14;
+    margin-right: 5px;
 }
 
 /*About Us Section Css End Here*/
@@ -542,7 +527,6 @@
 
 .formBox {
     background-color: #0f153b;
-    height: 100%;
     padding: 30px;
     display: flex;
     flex-direction: column;
@@ -551,7 +535,7 @@
 }
 
 .formBox h2 {
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 500;
     color: #fff;
     margin-bottom: 10px;
@@ -816,6 +800,7 @@
 
 .ContactMenu .contactContent .contactIconBox {
     width: 40px;
+    min-width: 40px;
     height: 40px;
     background-color: #fff;
     display: flex;
@@ -1329,18 +1314,166 @@
     color: #0f153b;
 }
 
-.timingSlotBox {
+
+.priceCardBox {
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.priceCardBox .pricingPlanIconBox {
+    width: 45px;
+    min-width: 45px;
+    height: 45px;
+    background: #0f153b;
+    border-radius: 50%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 20px;
+    justify-content: center;
+}
+
+.priceCardBox .pricingPlanIconBox svg {
+    color: #fff;
+    font-size: 30px;
+}
+
+.priceCardBox h2 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #0f153b;
+}
+
+.priceCardBox .pricingContent h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #0f153b;
+}
+
+.priceCardBox .pricingContent h6 {
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 5px;
+}
+
+.priceCardBox .pricingContent button {
+    padding: 0px;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: capitalize;
+    text-decoration: underline;
+    color: #0f153b;
+    transition: none;
+}
+
+.priceCardBox .pricingContent button:hover {
+    background-color: transparent;
+}
+
+
+/*Hover*/
+.priceCardBox:hover {
     background-color: #0f153b;
 }
 
-.timingSlotBox h3 {
-    font-size: 16px;
-    font-weight: 400;
+.priceCardBox:hover .pricingPlanIconBox {
+    background-color: #fff;
+}
+
+.priceCardBox:hover .pricingPlanIconBox svg {
+    color: #0f153b;
+}
+
+.priceCardBox:hover h2,
+.priceCardBox:hover .pricingContent h3,
+.priceCardBox:hover .pricingContent h6,
+.priceCardBox:hover .pricingContent button {
     color: #fff;
 }
 
+.amentiesIconBox {
+    width: 40px;
+    height: 40px;
+    background-color: #eee;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.amentiesIconBox svg {
+    color: #0f153b;
+}
+
+.propertyMapBox {
+    border-radius: 5px;
+    overflow: hidden;
+    line-height: 0;
+    border: 1px solid #ddd;
+}
+
 /*Listing Detail Page Css End Here*/
+
+.height100 {
+    height: 100%;
+}
+
+.swiper-pagination {
+    position: static;
+    margin-top: 15px;
+}
+
+/*Add New Listing Page Css Start Here*/
+.listingFormWraper_Sec {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.listingFormWraper_Sec h2 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    padding: 10px;
+    background-color: #0f153b;
+    margin-bottom: 15px;
+}
+
+.cstmFormGroup label {
+    font-size: 16px;
+    font-weight: 400;
+    color: #0f153b;
+    margin-bottom: 5px;
+}
+
+.cstmFormGroup label span {
+    padding: 0px 9px;
+}
+
+
+.cstmUploadBTN button {
+    width: 100%;
+    border: 2px dashed #ddd;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cstmUploadBTN button svg {
+    font-size: 50px;
+}
+
+.cstmUploadBTN button h6 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #0f153b;
+    text-transform: capitalize;
+    margin-top: 5px;
+}
+
+/*Add New Listing Page Css End Here*/
