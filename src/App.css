@@ -1477,3 +1477,69 @@
 }
 
 /*Add New Listing Page Css End Here*/
+
+/*Listing Preview Page Css Start Here*/
+.cstmDataTable_WraperSec {
+    background-color: #fff;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.cstmDataTable_WraperSec .cstmTable tr .cstmTh {
+    font-size: 15px;
+    font-weight: 500;
+    background-color: #0f153b;
+    color: #fff;
+    padding: 10px 15px;
+}
+
+.cstmDataTable_WraperSec .cstmTable tr .cstmTd {
+    font-size: 15px;
+    font-weight: 400;
+    color: #000;
+    padding: 10px 15px;
+}
+
+.cstmTablePagination p {
+    margin: 0px;
+}
+
+.cstmDataTable_WraperSec .cstmTable tr .cstmTd .tableActionBTN {
+    width: 35px;
+    height: 35px;
+    min-width: 35px;
+    font-size: 16px;
+}
+
+.cstmDataTable_WraperSec .cstmTable tr .cstmTd .tableActionBTN svg {
+    font-size: 18px;
+}
+
+.cstmDataTable_WraperSec .cstmTable tr .cstmTd .cstmEditBTN {
+    background: #1e97ef;
+    color: #fff;
+    margin-right: 5px;
+}
+
+.cstmDataTable_WraperSec .cstmTable tr .cstmTd .cstmDeleteBTN {
+    background: #df0000;
+    color: #fff;
+}
+
+.tableSearchFilter .cstmFormControl {
+    display: flex !important;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    justify-content: end;
+    margin-bottom: 15px;
+}
+
+.tableSearchFilter .cstmFormControl input {
+    padding: 8px 15px;
+}
+
+.tableSearchFilter .cstmFormControl fieldset {
+    border-radius: 50px;
+}
+
+/*Listing Preview Page Css End Here*/

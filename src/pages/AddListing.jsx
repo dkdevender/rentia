@@ -13,7 +13,7 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
 
 import CloudUploadIcon from '@mui/icons-material/CloudUpload';
-
+import { Link } from 'react-router-dom';
 
 
 
@@ -141,7 +141,7 @@ const AddListing = () => {
                         <Grid item md={4}>
                             <Box className='cstmFormGroup'>
                                 <FormControl sx={{ width: '100%' }}>
-                                    <FormLabel>Property Status</FormLabel>
+                                    <FormLabel>Parking</FormLabel>
                                     <Select
                                         value=""
                                         displayEmpty
@@ -339,6 +339,11 @@ const AddListing = () => {
                             </Box>
                         </Grid>
                     </Grid>
+                </Box>
+
+                <hr className='my-3' />
+                <Box className='btnBox text-center'>
+                    <Link to='/' className='cstmBTN px-5'>Save</Link>
                 </Box>
             </Container>
 

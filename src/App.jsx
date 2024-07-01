@@ -8,6 +8,7 @@ import Registration from './accounts/Registration'
 import Listing from './pages/Listing'
 import ListingDetail from './pages/ListingDetail'
 import AddListing from './pages/AddListing'
+import ListingPreview from './pages/ListingPreview'
 
 
 
@@ -24,6 +25,7 @@ const App = () => {
           <Route path="Listing" element={<Listing />} />
           <Route path="ListingDetail" element={<ListingDetail />} />
           <Route path="AddListing" element={<AddListing />} />
+          <Route path="ListingPreview" element={<ListingPreview />} />
         </Route>
       </Routes>
     </>
