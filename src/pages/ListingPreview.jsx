@@ -19,6 +19,7 @@ import DeleteIcon from '@mui/icons-material/Delete';
 import FormControl from '@mui/material/FormControl';
 import OutlinedInput from '@mui/material/OutlinedInput';
 
+
 const columns = [
     { id: 'sno', label: 'S.No' },
     { id: 'propertytitle', label: 'Property Title' },
